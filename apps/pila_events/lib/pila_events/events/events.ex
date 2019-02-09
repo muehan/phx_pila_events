@@ -1,4 +1,4 @@
-defmodule Pila.Events do
+defmodule PilaEvents.Events do
     use Ecto.Schema
 
     schema "events" do
