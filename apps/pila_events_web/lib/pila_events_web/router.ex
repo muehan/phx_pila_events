@@ -17,7 +17,12 @@ defmodule PilaEventsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/events/:id", EventController, :show
   end
+
+  # scope "/events", PilaEventsWeb do
+      
+  # end
 
   # Other scopes may use custom stacks.
   # scope "/api", PilaEventsWeb do

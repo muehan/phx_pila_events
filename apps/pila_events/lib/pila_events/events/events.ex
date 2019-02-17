@@ -12,7 +12,7 @@ defmodule PilaEvents.Events do
         timestamps()
     end
 
-    @required_fields ~w(location date)a
+    @required_fields ~w(location date title)a
     @optional_fields ~w(description)a
 
     def changeset(event, params \\ %{}) do

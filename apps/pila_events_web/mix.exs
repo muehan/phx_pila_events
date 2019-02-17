@@ -24,7 +24,7 @@ defmodule PilaEventsWeb.MixProject do
   def application do
     [
       mod: {PilaEventsWeb.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :pila_events]
     ]
   end
 
@@ -45,7 +45,8 @@ defmodule PilaEventsWeb.MixProject do
       {:gettext, "~> 0.11"},
       {:pila_events, in_umbrella: true},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:pila_events, in_umbrella: true}
     ]
   end
 
