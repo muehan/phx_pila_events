@@ -17,6 +17,7 @@ defmodule PilaEventsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/events", EventController, :list
     get "/events/:id", EventController, :show
   end
 

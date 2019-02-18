@@ -7,4 +7,10 @@ defmodule PilaEventsWeb.EventController do
     
     render conn, "details.html", event: event
   end
+
+  def list(conn, _params) do
+    events = PilaEvents.EventQueries.get_all()
+    
+    render conn, "list.html", events: events
+  end
 end
